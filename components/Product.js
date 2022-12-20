@@ -8,10 +8,10 @@ function ProductItem({ icon, name, nameColor, desc, buttonColor }) {
     const addButtonColor = ` ${buttonColor}`
 
     return (
-        <div class="relative flex flex-col items-center bg-white max-w-[350px] h-[480px] drop-shadow-xl rounded-8xl">
-            <img src={`${addIcon}`} class="max-[142px] pt-16 pb-12 px-10" />
+        <div class="relative flex flex-col items-center bg-white max-w-[350px] h-[436px] drop-shadow-xl rounded-8xl">
+            <img src={`${addIcon}`} class="max-[142px] pt-14 pb-8 px-10" />
             <h3 class={`text-2xl font-bold text-center ${addNameColor}`}>{name}</h3>
-            <p class="text-center leading-loose text-slate-500 max-w-[280px] pt-5">{desc}</p>
+            <p class="text-center leading-relax text-slate-500 max-w-[280px] pt-3">{desc}</p>
             <div class="absolute bottom-8 px-4">
                 <Button style="card" color={`text-white ${addButtonColor}`} variant="arrow-w">Coba gratis</Button>
             </div>
