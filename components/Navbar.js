@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Button from "./Button"
+import Logo from "./Logo"
 import Nav from "./Nav"
 
 export default function Navbar() {
@@ -17,7 +18,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener('scroll', changeColor);
     }
-  }, [])
+    }, [])
 
     const transition = {
         default: " ease-in duration-300",
@@ -29,9 +30,7 @@ export default function Navbar() {
             <header className={`sticky top-0 z-50 backdrop-blur-lg bg-spotDarkBlue/80 ${transition.default}`}>
                 <div class="container mx-auto max-w-[1240px]">
                     <div class="grid grid-cols-3 h-20 items-center">
-                        <div class="h-8">
-                            <img src="/logo-studispot-white.svg" />
-                        </div>
+                        <Logo size="h-8" variant="reverse" />
                         <Nav color="text-white" />
                         <div class="text-right text-sm">
                             <button class="text-white font-bold mx-8">Masuk</button>
@@ -45,9 +44,7 @@ export default function Navbar() {
             <header className={`sticky top-0 z-50 backdrop-blur-lg bg-white/80 drop-shadow-sm ${transition.onScroll}`}>
                 <div class="container mx-auto max-w-[1240px]">
                     <div class="grid grid-cols-3 h-20 items-center">
-                        <div class="h-8">
-                            <img src="/logo-studispot.svg" />
-                        </div>
+                        <Logo size="h-8" variant="normal" />
                         <Nav color="text-black" />
                         <div class="text-right text-sm">
                             <button class="text-black font-bold mx-8">Masuk</button>
