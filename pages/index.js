@@ -10,7 +10,7 @@ export default function Home() {
         <div class="container mx-auto px-24">
           asdasda
         </div>
-      </section>     
+      </section>
     </>
   )
 }

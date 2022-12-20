@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function Hero() {
     return (
         <main class="bg-[url('/hero-home.svg')] h-[688px] mx-auto">
-            <div class="container mx-24 pt-24">
+            <div class="container mx-auto pt-24">
                 <section>
                     <h1
                     class="text-white text-4.5xl font-bold leading-tight max-w-sm">Belajar bersama tanpa batas, mudah dan seru!
