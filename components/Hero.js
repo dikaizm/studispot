@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <main>
             <div class="h-[778px] absolute top-0 left-0 right-0">
-                <img src="/hero-home2.svg" />
+                <img src="/hero-home.svg" />
             </div>
             <div class="relative container mx-auto max-w-[1240px] pt-24">
                 <section>
