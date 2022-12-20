@@ -6,7 +6,7 @@ export default function Hero() {
             <div class="container mx-24 pt-24">
                 <section>
                     <h1
-                    class="text-white text-4.5xl font-bold leading-tight max-w-sm">Kak Adline, i love u <3
+                    class="text-white text-4.5xl font-bold leading-tight max-w-sm">Kak Adline, i love u
                     </h1>
                     <p class="text-white max-w-sm opacity-80 leading-loose pt-8">Temukan partner belajar, dapatkan solusi, dan tingkatkan pengetahuan kamu di sini!</p>
                 </section>
