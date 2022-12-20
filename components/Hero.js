@@ -3,8 +3,7 @@ import Button from "./Button";
 export default function Hero() {
     return (
         <main>
-            <div class="h-[778px] absolute top-0 left-0 right-0">
-                <img src="/hero-home.svg" />
+            <div class="bg-[url('/hero-home.svg')] absolute top-0 left-0 right-0 h-[778px] bg-cover bg-center">
             </div>
             <div class="relative container mx-auto max-w-[1240px] pt-24">
                 <section>

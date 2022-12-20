@@ -3,7 +3,7 @@ import Button from "./Button"
 import Nav from "./Nav"
 
 export default function Navbar() {
-    const [color, setColor] = useState(false)
+    const [navColor, setColor] = useState(false)
     const changeColor = () => {
         if (window.scrollY >= 700) {
             setColor(true)
@@ -50,12 +50,12 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-            </header>
+            </header>,
         }
 
     return (
         <>
-            {color ? styles.onScroll : styles.default }
+            { navColor ? styles.onScroll : styles.default }
         </>
     )
 }

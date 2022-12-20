@@ -5,8 +5,12 @@ import About from "../components/About"
 export default function Home() {
   return (
     <>
+      <Navbar />
       <Hero />
       <About />
+      <section class="h-[720px]">
+        abcaadas
+      </section>
     </>
   )
 }
