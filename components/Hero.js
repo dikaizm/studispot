@@ -2,8 +2,8 @@ import Button from "./Button";
 
 export default function Hero() {
     return (
-        <main class="bg-[url('/hero-home.svg')] h-[688px]">
-            <div class="container mx-auto px-100 pt-24">
+        <main class="bg-[url('/hero-home.svg')] h-[688px] mx-auto">
+            <div class="container ml-24 pt-24">
                 <section>
                     <h1
                     class="text-white text-4.5xl font-bold leading-tight max-w-sm">Belajar bersama tanpa batas, mudah dan seru!
