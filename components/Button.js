@@ -17,7 +17,7 @@ export default function Button({ color, variant, style, children }) {
     return (
         <button
             type="button"
-            class={`font-bold rounded-full px-6 text-center inline-flex items-center ${pickedStyle}${addColor}`}>
+            className={`font-bold rounded-full px-6 text-center inline-flex items-center ${pickedStyle}${addColor}`}>
             {children}
             
             {pickedVariant}

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Button from "./Button"
 import Nav from "./Nav"
 
@@ -12,7 +12,12 @@ export default function Navbar() {
         }
     }
 
-    window.addEventListener('scroll', changeColor)
+    useEffect(() => {
+    window.addEventListener('scroll', changeColor);
+    return () => {
+      window.removeEventListener('scroll', changeColor);
+    }
+  }, [])
 
     const transition = {
         default: " ease-in duration-300",
@@ -21,7 +26,7 @@ export default function Navbar() {
 
     const styles = {
         default:
-            <header class={`sticky top-0 z-50 backdrop-blur-lg bg-spotDarkBlue/80 ${transition.default}`}>
+            <header className={`sticky top-0 z-50 backdrop-blur-lg bg-spotDarkBlue/80 ${transition.default}`}>
                 <div class="container mx-auto max-w-[1240px]">
                     <div class="grid grid-cols-3 h-20 items-center">
                         <div class="h-8">
@@ -37,7 +42,7 @@ export default function Navbar() {
             </header>,
 
         onScroll:
-            <header class={`sticky top-0 z-50 backdrop-blur-lg bg-white/90 ${transition.onScroll}`}>
+            <header className={`sticky top-0 z-50 backdrop-blur-lg bg-white/90 ${transition.onScroll}`}>
                 <div class="container mx-auto max-w-[1240px]">
                     <div class="grid grid-cols-3 h-20 items-center">
                         <div class="h-8">
