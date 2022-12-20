@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function Hero() {
     return (
-        <main class="bg-[url('/hero-home.svg')] h-[688px]">
+        <main class="bg-[url('/hero-home.svg')] bg-cover bg-center h-[688px]">
             <div class="container mx-auto max-w-[1240px] pt-24">
                 <section>
                     <h1
