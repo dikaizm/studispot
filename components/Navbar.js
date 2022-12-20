@@ -42,7 +42,7 @@ export default function Navbar() {
             </header>,
 
         onScroll:
-            <header className={`sticky top-0 z-50 backdrop-blur-lg bg-white/90 ${transition.onScroll}`}>
+            <header className={`sticky top-0 z-50 backdrop-blur-lg bg-white/80 drop-shadow-sm ${transition.onScroll}`}>
                 <div class="container mx-auto max-w-[1240px]">
                     <div class="grid grid-cols-3 h-20 items-center">
                         <div class="h-8">

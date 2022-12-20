@@ -2,7 +2,8 @@ export default function Button({ color, variant, style, children }) {
     const addColor = color ? ` ${color}` : "";
 
     const variants = {
-        "arrow": <img src="/button-arrow.svg" />
+        "arrow-b": <img src="/button-arrow-b.svg" />,
+        "arrow-w": <img src="/button-arrow-w.svg" />
     };
 
     const styles = {

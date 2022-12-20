@@ -13,7 +13,7 @@ export default function Hero() {
                     <p class="text-white max-w-sm opacity-80 leading-loose pt-8">Temukan partner belajar, dapatkan solusi, dan tingkatkan pengetahuan kamu di sini!</p>
                 </section>
                 <div class="pt-12">
-                    <Button color="text-spotBlue bg-white" style="hero" variant="arrow">Coba gratis</Button>
+                    <Button color="text-spotBlue bg-white" style="hero" variant="arrow-b">Coba gratis</Button>
                 </div>
                 <div class="flex flex-col gap-y-4 pt-20 pb-24">
                     <div class="flex gap-x-4">

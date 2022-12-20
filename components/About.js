@@ -1,6 +1,5 @@
 export default function About() {
     return (
-        <section class="bg-spotBlue/10 relative right-0 left-0 h-[720px]">
             <div class="container mx-auto max-w-[1240px]">
                 <div class="grid grid-cols-2 gap-16 items-center pt-24">
                     <img class="max-width-full" src="/about-us.svg" />
@@ -14,6 +13,5 @@ export default function About() {
                 </div>
                 </div>
             </div>
-      </section>
     )
 }
