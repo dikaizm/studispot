@@ -3,10 +3,10 @@ import Button from "./Button";
 export default function Hero() {
     return (
         <main class="bg-[url('/hero-home.svg')] h-[688px] mx-auto">
-            <div class="container ml-24 pt-24">
+            <div class="container mx-24 pt-24">
                 <section>
                     <h1
-                    class="text-white text-4.5xl font-bold leading-tight max-w-sm">Belajar bersama tanpa batas, mudah dan seru!
+                    class="text-white text-4.5xl font-bold leading-tight max-w-sm">Kak Adline, i love u <3
                     </h1>
                     <p class="text-white max-w-sm opacity-80 leading-loose pt-8">Temukan partner belajar, dapatkan solusi, dan tingkatkan pengetahuan kamu di sini!</p>
                 </section>
