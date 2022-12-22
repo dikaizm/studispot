@@ -29,7 +29,7 @@ export default function Navbar() {
 
     const navStyle = {
         default: {
-            bg: "bg-spotDarBlue/80",
+            bg: "bg-spotDarkBlue/80",
             logo: "reverse",
             textColor: "text-white"
         },
