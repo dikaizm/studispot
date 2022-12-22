@@ -7,8 +7,10 @@ export default function Logo({ variant, className }) {
     const pickedVariant = addVariant[variant];
 
     return (
-        <div className={`${className}`}>
-            {pickedVariant}
+        <div className={`${className} max-w-fit`}>
+            <a href="/">
+                {pickedVariant}
+            </a>
         </div>
     )
 }

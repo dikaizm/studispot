@@ -13,7 +13,7 @@ function ContentItem({ click, image, title, tag, date }) {
                 <p className="font-bold text-slate-700 leading-relaxed pt-3">{title}</p>
                 <p className="text-xs text-slate-400 pt-2">{tag} / {date}</p>
             </div>
-        </a> 
+        </a>
     )
 }
 
