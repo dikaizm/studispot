@@ -4,60 +4,60 @@ import Logo from "./Logo"
 import Nav from "./Nav"
 
 export default function Navbar() {
+    //Setting scroll condition
     const [navColor, setColor] = useState(false)
     const changeColor = () => {
-        if (window.scrollY >= 700) {
+        if (window.scrollY >= window.innerHeight - 80) {
             setColor(true)
         } else {
             setColor(false)
         }
     }
 
+    //Get scroll state
     useEffect(() => {
-    window.addEventListener('scroll', changeColor);
-    return () => {
-      window.removeEventListener('scroll', changeColor);
-    }
+        window.addEventListener('scroll', changeColor);
+        return () => {
+            window.removeEventListener('scroll', changeColor);
+        }
     }, [])
 
     const transition = {
-        default: " ease-in duration-300",
-        onScroll: " ease-in duration-200"
+        default: "ease-in duration-300",
+        onScroll: "ease-in duration-200"
     }
 
-    const styles = {
-        default:
-            <header className={`sticky top-0 z-50 backdrop-blur-lg bg-spotDarkBlue/80 ${transition.default}`}>
-                <div class="container mx-auto max-w-[1240px]">
-                    <div class="grid grid-cols-3 h-20 items-center">
-                        <Logo size="h-8" variant="reverse" />
-                        <Nav color="text-white" />
-                        <div class="text-right text-sm">
-                            <button class="text-white font-bold mx-8">Masuk</button>
-                            <Button color="text-white bg-spotBlue" style="normal">Bergabung</Button>
-                        </div>
-                    </div>
-                </div>
-            </header>,
+    const navStyle = {
+        default: {
+            bg: "bg-spotDarBlue/80",
+            logo: "reverse",
+            textColor: "text-white"
+        },
+        onScroll: {
+            bg: "bg-white/80",
+            logo: "normal",
+            textColor: "text-black"
+        },
+    }
 
-        onScroll:
-            <header className={`sticky top-0 z-50 backdrop-blur-lg bg-white/80 drop-shadow-sm ${transition.onScroll}`}>
-                <div class="container mx-auto max-w-[1240px]">
-                    <div class="grid grid-cols-3 h-20 items-center">
-                        <Logo size="h-8" variant="normal" />
-                        <Nav color="text-black" />
-                        <div class="text-right text-sm">
-                            <button class="text-black font-bold mx-8">Masuk</button>
-                            <Button color="text-white bg-spotBlue" style="normal">Bergabung</Button>
-                        </div>
-                    </div>
-                </div>
-            </header>,
-        }
+    const switchStyle = {
+        bg: navColor ? navStyle.onScroll.bg : navStyle.default.bg,
+        logo: navColor ? navStyle.onScroll.logo : navStyle.default.logo,
+        textColor: navColor ? navStyle.onScroll.textColor : navStyle.default.textColor
+    }
 
     return (
-        <>
-            { navColor ? styles.onScroll : styles.default }
-        </>
+        <header className={`sticky top-0 z-50 backdrop-blur-lg ${switchStyle.bg} ${transition.default}`}>
+            <div className="container mx-auto max-w-[1240px]">
+                <div className="grid grid-cols-3 h-20 items-center">
+                    <Logo className="h-8 justify-self-start" variant={`${switchStyle.logo}`} />
+                    <Nav color={`${switchStyle.textColor}`} />
+                    <div className="justify-self-end text-sm">
+                        <button className={`${switchStyle.textColor} font-bold mx-8`}>Masuk</button>
+                        <Button color="text-white bg-spotBlue" style="normal">Bergabung</Button>
+                    </div>
+                </div>
+            </div>
+        </header>
     )
 }

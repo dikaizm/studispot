@@ -3,39 +3,39 @@ import Subscribe from "../components/Subscribe"
 
 export default function Footer() {
     return (
-        <footer class="bg-spotBlue/10 h-[360px] mt-32">
-        <div class="container mx-auto max-w-[1240px] pt-12">
-          <Logo size="h-7" variant="normal" />
-          <div class="grid grid-cols-2 gap-20 pt-9">
+        <footer className="bg-spotBlue/10 h-[360px] mt-32">
+        <div className="container mx-auto max-w-[1240px] pt-12">
+          <Logo className="h-7" variant="normal" />
+          <div className="grid grid-cols-2 gap-20 pt-9">
             <nav>
-              <div class="flex gap-20 text-slate-600 text-sm">
-                <ul class="flex flex-col gap-y-5">
-                  <li><p class="font-bold">Tentang</p></li>
+              <div className="flex gap-20 text-slate-600 text-sm">
+                <ul className="flex flex-col gap-y-5">
+                  <li><p className="font-bold">Tentang</p></li>
                   <li><a>Tentang Kami</a></li>
                   <li><a>Syarat dan Ketentuan</a></li>
                   <li><a>Kebijakan Privasi</a></li>
                 </ul>
-                <ul class="flex flex-col gap-y-5">
-                  <li><p class="font-bold">Produk</p></li>
+                <ul className="flex flex-col gap-y-5">
+                  <li><p className="font-bold">Produk</p></li>
                   <li><a>Spot Belajar</a></li>
                   <li><a>Spot Tanya</a></li>
                   <li><a>Spot Baca</a></li>
                 </ul>
-                <ul class="flex flex-col gap-y-5">
-                  <li><p class="font-bold">Hubungi Kami</p></li>
+                <ul className="flex flex-col gap-y-5">
+                  <li><p className="font-bold">Hubungi Kami</p></li>
                   <li><a>Kontak</a></li>
                   <li><a>Bantuan</a></li>
                 </ul>
               </div>
             </nav>
             <div>
-              <p class="text-xl font-bold text-spotBlue pb-5">Dapatkan wawasan baru khusus untuk kamu!</p>
+              <p className="text-xl font-bold text-spotBlue pb-5">Dapatkan wawasan baru khusus untuk kamu!</p>
               <Subscribe />
             </div>
           </div>
-          <div class="bg-slate-300 mt-12 h-[1px]">
+          <div className="bg-slate-300 mt-12 h-[1px]">
           </div>
-          <p class="text-center text-xs text-slate-500 pt-5">© 2022 Studispot</p>
+          <p className="text-center text-xs text-slate-500 pt-5">© 2022 Studispot</p>
         </div>
       </footer>
     )
