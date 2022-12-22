@@ -1,6 +1,6 @@
 import Button from "./Button"
 
-function ProductItem({ icon, name, nameColor, desc, buttonColor }) {
+function ProductItem({ icon, name, nameColor, desc, buttonColor, click }) {
     const addIcon = ` ${icon}`
 
     const addNameColor = ` ${nameColor}`
@@ -13,7 +13,7 @@ function ProductItem({ icon, name, nameColor, desc, buttonColor }) {
             <h3 className={`text-2xl font-bold text-center ${addNameColor}`}>{name}</h3>
             <p className="text-center leading-relax text-slate-500 max-w-[280px] pt-3">{desc}</p>
             <div className="absolute bottom-8 px-4">
-                <Button style="card" color={`text-white ${addButtonColor}`} variant="arrow-w">Coba gratis</Button>
+                <Button click={`${click}`} style="card" color={`text-white ${addButtonColor}`} variant="arrow-w">Coba gratis</Button>
             </div>
         </div>
     )
@@ -30,6 +30,7 @@ export default function Product() {
                         nameColor="text-spotBlue"
                         desc="Belajar efektif dengan tatap muka secara virtual."
                         buttonColor="bg-spotBlue"
+                        click="/belajar"
                     />
                     <ProductItem
                         icon="/card-icon-spottanya.svg"
@@ -37,6 +38,7 @@ export default function Product() {
                         nameColor="text-spotOrange"
                         desc="Cari jawaban dari pertanyaan-pertanyaanmu."
                         buttonColor="bg-spotOrange"
+                        click="/tanya"
                     />
                     <ProductItem
                         icon="/card-icon-spotbaca.svg"
@@ -44,6 +46,7 @@ export default function Product() {
                         nameColor="text-spotPurple"
                         desc="Dapatkan konten bermanfaat dari teman-teman belajar."
                         buttonColor="bg-spotPurple"
+                        click="/baca"
                     />
                 </div>
             </div>

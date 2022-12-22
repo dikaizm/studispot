@@ -53,8 +53,8 @@ export default function Navbar() {
                     <Logo className="h-8 justify-self-start" variant={`${switchStyle.logo}`} />
                     <Nav color={`${switchStyle.textColor}`} />
                     <div className="justify-self-end text-sm">
-                        <button className={`${switchStyle.textColor} font-bold mx-8`}>Masuk</button>
-                        <Button color="text-white bg-spotBlue" style="normal">Bergabung</Button>
+                        <a href="/error" className={`${switchStyle.textColor} font-bold mx-8`}>Masuk</a>
+                        <Button click="/error" color="text-white bg-spotBlue" style="normal">Bergabung</Button>
                     </div>
                 </div>
             </div>
