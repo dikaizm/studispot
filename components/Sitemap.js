@@ -1,7 +1,7 @@
 export default function Sitemap() {
     return (
         <nav>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:flex sm:gap-20 text-slate-600 text-sm">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:flex md:gap-20 text-slate-600 text-sm">
                 <ul className="flex flex-col gap-y-5">
                     <li><p className="font-bold">Tentang</p></li>
                     <li><a>Tentang Kami</a></li>

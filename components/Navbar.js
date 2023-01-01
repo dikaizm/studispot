@@ -6,8 +6,8 @@ import Nav from "./Nav"
 function MobileNav({ open, setOpen }) {
     return (
         <>
-        <header className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter sm:hidden`}>
-            <nav className="px-4">
+        <header className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter lg:hidden`}>
+            <nav className="container mx-auto px-4 md:px-10">
                 <div className="grid grid-cols-3 items-center h-14 md:h-20">
                     <button 
                         onClick={() => setOpen(!open)}
@@ -22,7 +22,7 @@ function MobileNav({ open, setOpen }) {
                             <img src="/nav-menu-close.svg" />
                         )}
                     </button>
-                    <Logo className="h-6 sm:h-8 justify-self-center lg:justify-self-start" variant="normal" />
+                    <Logo className="h-6 md:h-8 justify-self-center lg:justify-self-start" variant="normal" />
                     <div className="justify-self-end text-sm lg:hidden">
                         <a href="/error" className="font-bold text-gray-600">Masuk</a>
                     </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
     return (
         <header className={`sticky top-0 z-50 backdrop-blur-lg ${switchStyle.bg} ${transition.default}`}>
             <MobileNav open={open} setOpen={setOpen} />
-            <div className="container mx-auto px-4 sm:px-0 xl:max-w-[1240px] lg:max-w-[1000px]">
+            <div className="container mx-auto px-4 md:px-10">
                 <div className="grid grid-cols-3 items-center h-14 md:h-20">
                     <button 
                         onClick={() => setOpen(!open)}

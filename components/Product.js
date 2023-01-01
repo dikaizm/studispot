@@ -21,9 +21,9 @@ function ProductItem({ icon, name, nameColor, desc, buttonColor, click }) {
 
 export default function Product() {
     return (
-        <section className="absolute top-[780px] sm:top-[590px] right-0 left-0 h-[720px]">
-            <div className="container mx-auto px-9 sm:px-0 xl:max-w-[1114px] lg:max-w-[1000px]">
-                <div className="grid gap-y-8 sm:grid-cols-3 sm:gap-x-8">
+        <section className="absolute top-[780px] md:top-[590px] right-0 left-0 h-[720px]">
+            <div className="container mx-auto px-9 md:px-10">
+                <div className="grid gap-y-8 md:grid-cols-3 md:gap-x-8">
                     <ProductItem
                         icon="/card-icon-spotbelajar.svg"
                         name="Spot Belajar"

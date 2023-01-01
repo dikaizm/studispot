@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <section className="bg-spotBlue/10 relative h-[1600px] sm:h-[720px] -z-0">
+      <section className="bg-spotBlue/10 relative h-[1600px] md:h-[720px] -z-0">
         <About />
         <Product />
       </section>
