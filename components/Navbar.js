@@ -24,7 +24,7 @@ function MobileNav({ open, setOpen }) {
                     </button>
                     <Logo className="h-6 sm:h-8 justify-self-center lg:justify-self-start" variant="normal" />
                     <div className="justify-self-end text-sm lg:hidden">
-                        <a href="/error" className="font-bold">Masuk</a>
+                        <a href="/error" className="font-bold text-gray-600">Masuk</a>
                     </div>
                 </div>
                 <div className="mt-[calc(100vh/3.5)]">
@@ -74,7 +74,7 @@ export default function Navbar() {
             bg: "bg-white/80",
             logo: "normal",
             menu: "/nav-menu.svg",
-            textColor: "text-black"
+            textColor: "text-gray-600"
         },
     }
 

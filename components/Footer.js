@@ -4,7 +4,7 @@ import Sitemap from "./Sitemap"
 
 export default function Footer() {
     return (
-        <footer className="bg-spotBlue/10 h-[630px] sm:h-[360px] mt-24 sm:mt-32">
+        <footer className="bg-spotBlue/10 h-[660px] sm:h-[360px] mt-24 sm:mt-32">
           <div className="container mx-auto px-4 sm:px-0 xl:max-w-[1240px] lg:max-w-[1000px] pt-12">
             <div className="sm:hidden pb-12">
               <p className="text-base font-bold text-spotBlue pb-5 max-w-[200px]">Dapatkan wawasan baru khusus untuk kamu!</p>
