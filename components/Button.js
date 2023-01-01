@@ -1,13 +1,13 @@
 export default function Button({ click, color, variant, style, children }) {
     const addVariant = {
-        "arrow-b": <img src="/button-arrow-b.svg" className="h-4 sm:h-5" />,
-        "arrow-w": <img src="/button-arrow-w.svg" className="h-4 sm:h-5" />
+        "arrow-b": <img src="/button-arrow-b.svg" className="h-3 sm:h-4" />,
+        "arrow-w": <img src="/button-arrow-w.svg" className="h-3 sm:h-4" />
     };
 
     const addStyle = {
         "normal": `px-6 py-2.5 gap-x-5`,
         "hero": `px-6 py-2.5 sm:py-3 gap-x-5`,
-        "card": `px-6 py-2.5 xl:gap-x-32 lg:gap-x-16`,
+        "card": `px-6 py-2.5 gap-x-28 xl:gap-x-32 lg:gap-x-24 sm:gap-x-8`,
         "outline": `px-6 py-2.5 gap-x-5 border`
     }
 
