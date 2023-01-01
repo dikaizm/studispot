@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="bg-spotBlue/10 h-[360px] mt-32">
         <div className="container mx-auto max-w-[1240px] pt-12">
-          <Logo className="h-7" variant="normal" />
+          <Logo className="h-7 max-w-fit" variant="normal" />
           <div className="grid grid-cols-2 gap-20 pt-9">
             <nav>
               <div className="flex gap-20 text-slate-600 text-sm">

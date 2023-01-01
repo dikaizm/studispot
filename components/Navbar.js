@@ -31,11 +31,13 @@ export default function Navbar() {
         default: {
             bg: "bg-spotDarkBlue/80",
             logo: "reverse",
+            menu: "/nav-menu-white.svg",
             textColor: "text-white"
         },
         onScroll: {
             bg: "bg-white/80",
             logo: "normal",
+            menu: "/nav-menu.svg",
             textColor: "text-black"
         },
     }
@@ -43,17 +45,18 @@ export default function Navbar() {
     const switchStyle = {
         bg: navColor ? navStyle.onScroll.bg : navStyle.default.bg,
         logo: navColor ? navStyle.onScroll.logo : navStyle.default.logo,
+        menu: navColor ? navStyle.onScroll.menu : navStyle.default.menu,
         textColor: navColor ? navStyle.onScroll.textColor : navStyle.default.textColor
     }
 
     return (
         <header className={`sticky top-0 z-50 backdrop-blur-lg ${switchStyle.bg} ${transition.default}`}>
-            <div className="container mx-auto xl:max-w-[1240px] lg:max-w-[1000px]">
-                <div className="grid grid-flow-col items-center h-14 lg:h-20">
+            <div className="container mx-auto px-4 sm:px-0 xl:max-w-[1240px] lg:max-w-[1000px]">
+                <div className="grid grid-cols-3 items-center h-14 md:h-20">
                     <div className="justify-self-start lg:hidden">
-                        <img src="/nav-menu.svg" />
+                        <img src={`${switchStyle.menu}`} />
                     </div>
-                    <Logo className="h-8 justify-self-center lg:justify-self-start" variant={`${switchStyle.logo}`} />
+                    <Logo className="h-6 sm:h-8 justify-self-center lg:justify-self-start" variant={`${switchStyle.logo}`} />
                     <div className="lg:justify-self-center lg:block hidden">
                         <Nav color={`${switchStyle.textColor}`} />
                     </div>

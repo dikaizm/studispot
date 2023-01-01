@@ -19,7 +19,7 @@ function ContentItem({ click, image, title, tag, date }) {
 
 function ContentItemGroup() {
     return (
-        <section className="grid grid-cols-4 grid-rows-2 gap-x-8 gap-y-10 pt-16">
+        <section className="grid grid-cols-4 grid-rows-2 gap-x-8 gap-y-10 pt-16 hidden">
             <ContentItem
                 click=""
                 image="/hero-home.svg"

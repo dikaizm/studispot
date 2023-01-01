@@ -1,16 +1,14 @@
 export default function Logo({ variant, className }) {
     const addVariant = {
-        "normal": <img src="/logo-studispot.svg" />,
-        "reverse": <img src="/logo-studispot-white.svg" />
+        "normal": <img src="/logo-studispot.svg" className={`${className}`} />,
+        "reverse": <img src="/logo-studispot-white.svg" className={`${className}`} />
     }
 
     const pickedVariant = addVariant[variant];
 
     return (
-        <div className={`${className} max-w-fit`}>
-            <a href="/">
-                {pickedVariant}
-            </a>
-        </div>
+        <a href="/">
+            {pickedVariant}
+        </a>
     )
 }
