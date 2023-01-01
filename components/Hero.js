@@ -8,9 +8,9 @@ export default function Hero() {
             <div className="relative container mx-auto px-4 md:px-10 pt-80 md:pt-24 h-[calc(100vh-80px)] overflow-hidden z-20">
                 <section>
                     <h1
-                    className="text-white text-3xl md:text-4.5xl font-bold leading-tight  max-w-xs md:max-w-md">Belajar bersama tanpa batas,<br /> mudah dan seru!
+                    className="text-white text-3xl md:text-4.5xl font-bold leading-tight max-w-xs md:max-w-sm">Belajar bersama tanpa batas,<br /> mudah dan seru!
                     </h1>
-                    <p className="text-white text-md md:text-base max-w-md opacity-80 leading-loose pt-6 md:pt-8">Temukan partner belajar, dapatkan solusi, dan tingkatkan pengetahuan kamu di sini!</p>
+                    <p className="text-white text-sm md:text-base max-w-sm opacity-80 leading-loose md:leading-loose pt-6 md:pt-8">Temukan partner belajar, dapatkan solusi, dan tingkatkan pengetahuan kamu di sini!</p>
                 </section>
                 <div className="pt-8 md:pt-12">
                     <Button click="/belajar" color="text-spotBlue bg-white" style="hero" variant="arrow-b">Coba gratis</Button>
