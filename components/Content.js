@@ -82,7 +82,7 @@ function ContentItemGroup() {
 
 export default function Content() {
     return (
-    <section className="container mx-auto max-w-[1240px] mt-[400px] sm:mt-[455px]">
+    <section className="container mx-auto max-w-[1240px] mt-[400px] sm:mt-[455px] px-4 sm:px-0">
         <div className="text-center space-y-5">
             <h2 className="font-bold text-spotBlue text-2xl sm:text-3xl">Tambah Pengetahuan Kamu</h2>
             <p className="text-sm sm:text-base text-slate-600">Temukan konten bermanfaat dan tingkatkan wawasanmu di Studispot!</p>

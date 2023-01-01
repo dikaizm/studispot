@@ -1,6 +1,6 @@
 export default function Search() {
     return (
-        <form className="mx-auto max-w-[670px] pt-8 sm:pt-10 px-4 sm:px-0">
+        <form className="mx-auto max-w-[670px] pt-8 sm:pt-10">
         <div className="flex">
         <label htmlFor="search-dropdown" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
         <button id="dropdown-button" data-dropdown-toggle="dropdown" className="flex-shrink-0 z-10 inline-flex items-center py-3 sm:py-4 pl-5 w-28 sm:w-32 text-sm font-medium text-center bg-gray-100 border border-spotBlue text-spotBlue rounded-l-full hover:bg-gray-200" type="button">Semua<svg aria-hidden="true" className="w-5 h-5 ml-3 sm:ml-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></button>

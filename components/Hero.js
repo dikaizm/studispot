@@ -3,9 +3,9 @@ import Button from "./Button";
 export default function Hero() {
     return (
         <main>
-            <div className="bg-[url('/hero-home-m.svg')] sm:bg-[url('/hero-home.svg')] absolute top-0 left-0 right-0 h-screen bg-cover bg-center">
+            <div className="bg-[url('/hero-home-m.svg')] sm:bg-[url('/hero-home.svg')] absolute top-0 left-0 right-0 h-screen bg-cover bg-center z-10">
             </div>
-            <div className="relative container mx-auto px-4 sm:px-0 xl:max-w-[1240px] lg:max-w-[1000px] pt-80 sm:pt-24 h-[calc(100vh-80px)] overflow-hidden">
+            <div className="relative container mx-auto px-4 sm:px-0 xl:max-w-[1240px] lg:max-w-[1000px] pt-80 sm:pt-24 h-[calc(100vh-80px)] overflow-hidden z-20">
                 <section>
                     <h1
                     className="text-white text-3xl sm:text-4.5xl font-bold leading-tight  max-w-xs sm:max-w-sm">Belajar bersama tanpa batas,<br /> mudah dan seru!

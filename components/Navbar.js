@@ -6,7 +6,7 @@ import Nav from "./Nav"
 function MobileNav({ open, setOpen }) {
     return (
         <>
-        <header className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter`}>
+        <header className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter sm:hidden`}>
             <nav className="px-4">
                 <div className="grid grid-cols-3 items-center h-14 md:h-20">
                     <button 
