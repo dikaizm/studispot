@@ -48,13 +48,21 @@ export default function Navbar() {
 
     return (
         <header className={`sticky top-0 z-50 backdrop-blur-lg ${switchStyle.bg} ${transition.default}`}>
-            <div className="container mx-auto max-w-[1240px]">
-                <div className="grid grid-cols-3 h-20 items-center">
-                    <Logo className="h-8 justify-self-start" variant={`${switchStyle.logo}`} />
-                    <Nav color={`${switchStyle.textColor}`} />
-                    <div className="justify-self-end text-sm">
+            <div className="container mx-auto xl:max-w-[1240px] lg:max-w-[1000px]">
+                <div className="grid grid-flow-col items-center h-14 lg:h-20">
+                    <div className="justify-self-start lg:hidden">
+                        <img src="/nav-menu.svg" />
+                    </div>
+                    <Logo className="h-8 justify-self-center lg:justify-self-start" variant={`${switchStyle.logo}`} />
+                    <div className="lg:justify-self-center lg:block hidden">
+                        <Nav color={`${switchStyle.textColor}`} />
+                    </div>
+                    <div className="lg:justify-self-end lg:text-sm lg:inline hidden">
                         <a href="/error" className={`${switchStyle.textColor} font-bold mx-8`}>Masuk</a>
                         <Button click="/error" color="text-white bg-spotBlue" style="normal">Bergabung</Button>
+                    </div>
+                    <div className="justify-self-end text-sm lg:hidden">
+                        <a href="/error" className={`${switchStyle.textColor}`}>Masuk</a>
                     </div>
                 </div>
             </div>

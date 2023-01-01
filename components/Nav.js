@@ -1,7 +1,7 @@
 export default function Nav({ color }) {
 
     return (
-        <nav className="grid grid-cols-3 text-sm gap-x-14 min-w-max justify-self-center">
+        <nav className="grid grid-flow-row gap-y-4 lg:grid-flow-col lg:text-sm lg:gap-x-14 min-w-max lg:justify-self-center">
             <a href="/belajar">
                 <div className="flex gap-x-2.5 items-center">
                     <img className="h-5" src="/nav-icon-spotbelajar.svg"/>
