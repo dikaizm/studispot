@@ -62,7 +62,7 @@ export default function Navbar() {
                         <Button click="/error" color="text-white bg-spotBlue" style="normal">Bergabung</Button>
                     </div>
                     <div className="justify-self-end text-sm lg:hidden">
-                        <a href="/error" className={`${switchStyle.textColor}`}>Masuk</a>
+                        <a href="/error" className={`${switchStyle.textColor} font-bold`}>Masuk</a>
                     </div>
                 </div>
             </div>
