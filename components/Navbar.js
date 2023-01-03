@@ -7,12 +7,12 @@ function MobileNav({ open, setOpen }) {
     return (
         <>
         <header className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter lg:hidden`}>
-            <nav className="container mx-auto px-4 md:px-10">
-                <div className="grid grid-cols-3 items-center h-14 md:h-20">
+            <div className="relative container mx-auto px-4 md:px-10">
+                <div className="grid grid-cols-3 items-center h-14 md:h-20 justify-items-center">
                     <button 
                         onClick={() => setOpen(!open)}
                         type="button"
-                        className="justify-self-start lg:hidden"
+                        className="justify-self-start"
                         aria-controls="mobile-menu"
                         aria-expanded="false"
                     >
@@ -22,14 +22,14 @@ function MobileNav({ open, setOpen }) {
                             <img src="/nav-menu-close.svg" />
                         )}
                     </button>
-                    <Logo className="h-6 md:h-8 justify-self-center lg:justify-self-start" variant="normal" />
-                    <div className="justify-self-end text-sm lg:hidden">
+                    <Logo className="h-6 md:h-8 justify-self-center" variant="normal" />
+                    <div className="justify-self-end text-sm">
                         <a href="/error" className="font-bold text-gray-600">Masuk</a>
                     </div>
                 </div>
-                <div className="mt-[calc(100vh/3.5)]">
-                    <Nav />
-                </div>
+            </div>
+            <nav className="container mx-auto mt-[calc(100vh/3.5)]">
+                <Nav />
             </nav>
         </header>
         </>
@@ -89,7 +89,7 @@ export default function Navbar() {
         <header className={`sticky top-0 z-50 backdrop-blur-lg ${switchStyle.bg} ${transition.default}`}>
             <MobileNav open={open} setOpen={setOpen} />
             <div className="container mx-auto px-4 md:px-10">
-                <div className="grid grid-cols-3 items-center h-14 md:h-20">
+                <div className="grid grid-cols-3 items-center h-14 md:h-20 justify-items-center lg:justify-items-stretch">
                     <button 
                         onClick={() => setOpen(!open)}
                         type="button"
@@ -104,7 +104,7 @@ export default function Navbar() {
                         )}
                     </button>
                     <Logo className="h-6 md:h-8 justify-self-center lg:justify-self-start" variant={`${switchStyle.logo}`} />
-                    <div className="lg:justify-self-center lg:inline-block hidden">
+                    <div className="lg:justify-self-center min-w-max lg:inline-block hidden">
                         <Nav color={`${switchStyle.textColor}`} />
                     </div>
                     <div className="lg:justify-self-end text-sm lg:inline hidden">

@@ -1,6 +1,6 @@
 import Error from "./error";
 
-export default function Baca() {
+export default function Belajar() {
     return (
         <Error></Error>
     )
