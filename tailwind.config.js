@@ -21,6 +21,10 @@ module.exports = {
       },
       borderRadius: {
         '8xl': '2rem'
+      },
+      screens: {
+        'short': { 'raw': '(max-height: 660px)' },
+        'tall': { 'raw': '(min-height: 960px)' },
       }
     },
   },

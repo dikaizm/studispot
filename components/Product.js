@@ -8,10 +8,10 @@ function ProductItem({ icon, name, nameColor, desc, buttonColor, click }) {
     const addButtonColor = ` ${buttonColor}`
 
     return (
-        <div className="relative flex flex-col items-center bg-white max-w-[350px] h-[340px] sm:h-[436px] drop-shadow-xl rounded-8xl">
-            <img src={`${addIcon}`} className="pt-8 pb-5 w-[100px] sm:w-[142px] sm:pt-14 sm:pb-8" />
-            <h3 className={`text-xl sm:text-2xl font-bold text-center ${addNameColor}`}>{name}</h3>
-            <p className="text-center text-sm sm:text-base leading-relax text-slate-500 xl:max-w-[280px] lg:max-w-[250px] max-w-[200px] pt-3">{desc}</p>
+        <div className="relative flex flex-col items-center bg-white md:max-w-[350px] h-[340px] lg:h-[436px] drop-shadow-xl rounded-8xl">
+            <img src={`${addIcon}`} className="pt-8 pb-5 w-[100px] lg:w-[142px] lg:pt-14 lg:pb-8" />
+            <h3 className={`text-xl lg:text-2xl font-bold text-center ${addNameColor}`}>{name}</h3>
+            <p className="text-center text-sm lg:text-base leading-relax text-slate-500 xl:max-w-[280px] lg:max-w-[250px] max-w-[200px] pt-3">{desc}</p>
             <div className="absolute bottom-8 px-4">
                 <Button click={`${click}`} style="card" color={`text-white ${addButtonColor}`} variant="arrow-w">Coba gratis</Button>
             </div>
@@ -21,9 +21,9 @@ function ProductItem({ icon, name, nameColor, desc, buttonColor, click }) {
 
 export default function Product() {
     return (
-        <section className="absolute top-[780px] md:top-[590px] right-0 left-0 h-[720px]">
+        <section className="relative right-0 left-0 pt-14">
             <div className="container mx-auto px-9 md:px-10">
-                <div className="grid gap-y-8 md:grid-cols-3 md:gap-x-8">
+                <div className="grid grid-cols-1 gap-y-8 md:grid-cols-3 lg:gap-x-8 md:gap-x-6">
                     <ProductItem
                         icon="/card-icon-spotbelajar.svg"
                         name="Spot Belajar"

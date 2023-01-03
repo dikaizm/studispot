@@ -103,12 +103,12 @@ export default function Navbar() {
                             <img src="nav-menu-close.svg" />
                         )}
                     </button>
-                    <Logo className="h-6 sm:h-8 justify-self-center lg:justify-self-start" variant={`${switchStyle.logo}`} />
-                    <div className="lg:justify-self-center lg:block hidden">
+                    <Logo className="h-6 md:h-8 justify-self-center lg:justify-self-start" variant={`${switchStyle.logo}`} />
+                    <div className="lg:justify-self-center lg:inline-block hidden">
                         <Nav color={`${switchStyle.textColor}`} />
                     </div>
-                    <div className="lg:justify-self-end lg:text-sm lg:inline hidden">
-                        <a href="/error" className={`${switchStyle.textColor} font-bold mx-8`}>Masuk</a>
+                    <div className="lg:justify-self-end text-sm lg:inline hidden">
+                        <a href="/error" className={`${switchStyle.textColor} font-bold mr-8`}>Masuk</a>
                         <Button click="/error" color="text-white bg-spotBlue" style="normal">Bergabung</Button>
                     </div>
                     <div className="justify-self-end text-sm lg:hidden">

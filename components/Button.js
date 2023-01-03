@@ -17,7 +17,7 @@ export default function Button({ click, color, variant, style, children }) {
     return (
         <a  
             href={`${click}`}
-            className={`font-bold text-sm md:text-base rounded-full text-center inline-flex items-center ${pickedStyle} ${color}`}>
+            className={`font-bold text-sm lg:text-base rounded-full text-center inline-flex items-center ${pickedStyle} ${color}`}>
             {children}
             
             {pickedVariant}
