@@ -5,7 +5,7 @@ export default function Hero() {
         <main>
             <div className="bg-[url('/hero-home-m.svg')] md:bg-[url('/hero-home.svg')] absolute top-0 left-0 right-0 h-screen bg-cover bg-center z-10">
             </div>
-            <div className="relative container mx-auto px-4 md:px-10 pt-80 md:pt-24 h-[calc(100vh-80px)] overflow-hidden z-20">
+            <div className="relative container mx-auto px-4 md:px-10 pt-[calc(100vh/2.7)] md:pt-24 h-[calc(100vh-80px)] overflow-hidden z-20">
                 <section>
                     <h1
                     className="text-white text-3xl md:text-4.5xl font-bold leading-tight max-w-xs md:max-w-sm">Belajar bersama tanpa batas,<br /> mudah dan seru!
