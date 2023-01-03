@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="relative container mx-auto px-4 md:px-10 pt-[calc(100vh/2.7)] md:pt-24 h-[calc(100vh-56px)] md:h-[calc(100vh-80px)] z-20">
                 <section>
                     <h1
-                    className="text-white text-3xl md:text-4.5xl font-bold leading-tight max-w-xs md:max-w-sm">Belajar bersama tanpa batas,<br /> mudah dan seru!
+                    className="text-white text-3xl md:text-4.5xl font-bold leading-tight max-w-[260px] sm:max-w-sm">Belajar bersama tanpa batas, mudah dan seru!
                     </h1>
                     <p className="text-white text-sm md:text-base max-w-sm opacity-80 leading-loose md:leading-loose pt-6 md:pt-8">Temukan partner belajar, dapatkan solusi, dan tingkatkan pengetahuan kamu di sini!</p>
                 </section>
